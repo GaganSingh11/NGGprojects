@@ -1,0 +1,56 @@
+
+/* root style   */
+:root {
+    --primary-color: #bccad6 ;
+    --secondary-color: #8d9db6;
+    --text-color: #667292;
+    --ternary-color: #f1e3dd ;
+}
+
+* {
+    background: var(--primary-color);
+    padding: 0;
+    margin: 0;
+}
+
+h1,h2,h3, p, li {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+li {
+    list-style: none;
+}
+
+.title-block {
+    padding: 1rem;
+    text-align: center;
+}
+
+img {
+    border-radius: 50%;
+    opacity: 0.8;
+    width: 12rem;
+    height: 10rem;
+    border-color: var(--text-color);
+    margin-right: 1rem;
+}
+
+.hero-section {
+    display: flex;
+    margin: 1rem;
+}
+
+.info {
+    display: flex;
+    margin: 1rem;
+}
+
+.info-sidebar {
+    margin-right: 3rem;
+}
+
+
+
+
+
