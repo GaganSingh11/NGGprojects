@@ -59,6 +59,11 @@ img {
     width: 17%;
 }
 
+li:hover {
+    color: var(--text-color);
+    font-weight: 800;
+}
+
 /* Media queries for mobile device */
 
 @media screen and (max-width: 400px) {
@@ -94,7 +99,7 @@ img {
 }
 
 /* Css animations */
-
+@keyframes 
 
 
 
