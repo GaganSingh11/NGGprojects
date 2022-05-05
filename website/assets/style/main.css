@@ -31,6 +31,55 @@ li {
     list-style: none;
 }
 
+/* nav bar css */
+.nav-container {
+    display: flex;
+    background-color: var(--text-color);
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    position: sticky;
+    top: 0;
+}
+.bread-crumb {
+    visibility: hidden;
+}
+.left-container {
+    display: flex;
+    align-items: center;
+    
+}
+.left-container ul {
+    display: flex;
+    /* align-items: center; */
+    
+}
+.left-container li, a {
+    color: var(--ternary-color);
+    text-decoration: none;
+    margin: auto;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+.left-container a {
+    font-size: 3rem;
+    font-weight: 900;
+    transform: rotate(-20deg);
+}
+.btn {
+    background-color: var(--text-color);
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 0.4rem;
+    color: var(--ternary-color);
+}
+.input-search {
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+}
+
+/* Resume Page css */
+
 .title-block {
     padding: 1rem;
     text-align: center;
@@ -60,10 +109,6 @@ img {
     width: 17%;
 }
 
-li:hover {
-    color: var(--text-color);
-    font-weight: 800;
-}
 
 /* Media queries for mobile device */
 
@@ -96,11 +141,27 @@ li:hover {
     .info-sidebar {
         width: 20vw;
     }
+
+    .bread-crumb {
+        visibility: visible;
+    }
+    .left-container ul {
+        visibility: hidden;
+    }
+    .btn {
+        visibility: hidden;
+    }
+    .input-search {
+        visibility: hidden;
+    }
+    .logo {
+        visibility: visible;
+    }
+
     
 }
 
-/* Css animations */
-@keyframes 
+
 
 
 
