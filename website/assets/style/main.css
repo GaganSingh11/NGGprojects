@@ -22,6 +22,7 @@ body {
     font-family: var(--font);
 }
 
+/* combinator type (,). all h1,h2,h3,p and li */
 h1,h2,h3, p, li {
     color: var(--text-color);
     margin-bottom: 1rem;
@@ -31,7 +32,12 @@ li {
     list-style: none;
 }
 
-/* nav bar css */
+/* combinator type (>) : p element directly inside the class */
+.hero-right > p {
+    font-weight: bold;
+}
+
+/* nav bar using display and postion properties */
 .nav-container {
     display: flex;
     background-color: var(--text-color);
@@ -50,6 +56,7 @@ li {
     align-items: center;
     
 }
+/* combinator type (space) : all ul elements inside class .left-container */
 .left-container ul {
     display: flex;
     /* align-items: center; */
@@ -73,9 +80,17 @@ li {
     border-radius: 0.4rem;
     color: var(--ternary-color);
 }
+/* pseudo class :active applied to nav button element */
+button:active {
+    border: none;
+}
 .input-search {
     padding: 0.5rem;
     border-radius: 0.4rem;
+}
+/* pseudo element */
+p::after {
+    content: Year 2021;
 }
 
 /* Resume Page css */
@@ -92,6 +107,11 @@ img {
     height: 10rem;
     border-color: var(--text-color);
     margin-right: 1rem;
+}
+/* Pseudo class :hover */
+img:hover {
+    transform: scale(1.1);
+    transition-duration: 1s;
 }
 
 .hero-section {
