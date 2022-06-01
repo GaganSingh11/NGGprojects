@@ -15,6 +15,7 @@ function countDown() {
 }
 
 
+
 let btn_hide_show = document.getElementById("hide-show")
 let santa = document.getElementById("santa")
 
