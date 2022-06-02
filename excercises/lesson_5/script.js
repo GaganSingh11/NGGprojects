@@ -34,6 +34,7 @@ let calculate = document.getElementById("cal-btn");
 let area = document.getElementById("area");
 console.log(radius)
 area.innerHTML = 0;
+
 function math() {
     let pie = 3.14;
     area.innerHTML = pie*radius*radius;
